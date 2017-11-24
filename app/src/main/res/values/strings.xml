@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">CocktailCurator</string>
+    <string name="logo">logo</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="genList">ListActivty</string>
+    <string name="setName"></string>
+    <string name="setIng">setIng</string>
+    <string name="setRec">setRec</string>
+
+
+    <string-array name="liquorArray">
+        <item>Bourbon</item>
+        <item>Cognac</item>
+        <item>Gin</item>
+        <item>Rum</item>
+        <item>Scotch</item>
+        <item>Vodka</item>
+    </string-array>
+    <string-array name="tasteArray">
+        <item>Bold</item>
+        <item>Citrus</item>
+        <item>Sweet</item>
+
+    </string-array>
+</resources>

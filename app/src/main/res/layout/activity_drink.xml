@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/darkGrey"
+    tools:context="com.example.bendev.cocktailcurator.DrinkActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/setName"
+            android:id="@+id/textView4"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10px"
+            android:textColor="@color/darkBlue" />
+
+        <ImageView
+            android:layout_width="218dp"
+            android:layout_height="172dp"
+            android:id="@+id/drinkPhoto"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="defualtImage"
+            android:background="@drawable/defaultimage"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/drinkNameField"
+            android:textAppearance="@android:style/TextAppearance.Material.Large"
+            android:layout_margin="10px"
+            android:textColor="@color/darkBlue"
+            tools:textColorHighlight="@color/darkBlue"
+            android:textColorHighlight="@color/darkBlue" />
+
+        <LinearLayout
+            android:background="@color/darkBlue"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView"
+                android:layout_gravity="center_horizontal" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/setIng"
+                        android:id="@+id/ingred"
+                        android:editable="false"
+                        android:textColor="@android:color/black"
+                        android:layout_weight="0.66" />
+
+                    <EditText
+                        android:editable="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/recipe"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/setRec"
+                        android:inputType="none"
+                        android:textColor="@android:color/black" />
+
+                    <Button
+                        android:text="Find Liquor Store"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/storeButton"
+                        android:elevation="10dp"
+                        android:background="@color/darkGrey"
+                        android:textColor="@color/darkBlue"
+                        android:layout_margin="10dp"
+                        android:onClick="launchMaps"/>
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout><![CDATA[
+            ">
+
+            ]]>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
